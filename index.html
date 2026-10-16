@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Informações sobre o ORYX Backup, ferramenta privada de cópia de segurança criptografada no Google Drive.">
+  <title>ORYX Backup — Informações do aplicativo</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.6;color:#ebf0ff;background:#080f25}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 80% 5%,rgba(79,70,229,.24),transparent 40%),radial-gradient(ellipse at 15% 70%,rgba(15,82,186,.18),transparent 42%),#080f25}.wrap{width:min(900px,calc(100% - 40px));margin:auto}header{display:flex;align-items:center;justify-content:space-between;padding:32px 0;gap:16px}a{color:#bad0ff;text-decoration:underline;text-underline-offset:3px}a:hover{color:#fff}.wordmark{font-size:1.18rem;letter-spacing:.12em;font-weight:850;color:white}.wordmark span{color:#8b9eff}nav a{font-size:.93rem}main{padding:48px 0 64px}.eyebrow{text-transform:uppercase;color:#93b2fb;font-weight:750;letter-spacing:.13em;font-size:.78rem}h1{font-size:clamp(2.2rem,6vw,4rem);letter-spacing:-.045em;line-height:1.08;margin:14px 0 22px;max-width:750px}p{color:#c7d2eb;font-size:1.08rem;max-width:740px}.highlight{color:#fff}.panel{background:rgba(25,39,79,.57);border:1px solid rgba(168,187,239,.22);border-radius:20px;padding:25px;margin-top:30px}.panel h2{font-size:1.2rem;margin:0 0 8px}.panel p{font-size:.98rem;margin:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}.grid .panel{margin:0}.pill{display:inline-block;background:#1c3264;border:1px solid #4567ae;color:#d4e4ff;border-radius:999px;padding:6px 13px;font-size:.83rem;margin-top:15px}footer{border-top:1px solid rgba(168,187,239,.18);padding:22px 0 38px;font-size:.86rem;color:#aabadd}footer p{font-size:.86rem}a:focus-visible{outline:2px solid #a6bcff;outline-offset:4px}@media(max-width:680px){header{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}main{padding:26px 0 44px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header><div class="wordmark">ORYX <span>BACKUP</span></div><nav aria-label="Navegação"><a href="./privacidade.html">Política de Privacidade</a></nav></header>
+    <main>
+      <div class="eyebrow">Aplicativo privado de infraestrutura</div>
+      <h1>Proteção de backups com criptografia antes do armazenamento.</h1>
+      <p>O <strong class="highlight">ORYX Backup</strong> é uma integração de uso interno que utiliza o <strong class="highlight">rclone</strong> e o <strong class="highlight">Restic</strong> para armazenar cópias de segurança criptografadas em uma conta Google Drive dedicada ao projeto ORYX.</p>
+      <span class="pill">Acesso restrito à conta autorizada</span>
+      <div class="grid">
+        <section class="panel"><h2>Google Drive</h2><p>O aplicativo solicita a permissão <code>drive.file</code>, limitada aos arquivos criados ou autorizados para ele.</p></section>
+        <section class="panel"><h2>Criptografia</h2><p>O Restic protege o conteúdo dos backups antes de seu envio ao Google Drive. A senha fica sob controle do operador.</p></section>
+        <section class="panel"><h2>Uso interno</h2><p>A integração é destinada à manutenção e recuperação técnica do ORYX, não é oferecida como serviço público.</p></section>
+      </div>
+      <section class="panel"><h2>Transparência sobre dados</h2><p>Consulte a <a href="./privacidade.html">Política de Privacidade do ORYX Backup</a> para entender quais permissões são solicitadas, a finalidade do acesso ao Drive e os controles aplicados aos backups. Esta página é informativa; não permite visualizar nem baixar arquivos de backup.</p></section>
+    </main>
+    <footer><div>ORYX Backup · Infraestrutura de cópias de segurança</div><p>Site informativo público, separado da aplicação financeira ORYX e do armazenamento privado no Google Drive.</p></footer>
+  </div>
+</body>
+</html>
