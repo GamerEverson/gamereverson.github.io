@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidade da integração privada ORYX Backup com o Google Drive.">
+  <title>Política de Privacidade — ORYX Backup</title>
+  <style>
+   :root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.65;color:#e8efff;background:#0a1127}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 90% 0%,rgba(79,70,229,.16),transparent 50%),#0a1127}.wrap{width:min(800px,calc(100% - 40px));margin:auto}header{padding:28px 0;border-bottom:1px solid #293653}a{color:#bacdff;text-underline-offset:3px}a:hover{color:white}main{padding:26px 0 70px}h1{font-size:clamp(2rem,5vw,2.85rem);line-height:1.14}h2{font-size:1.23rem;color:white;margin-top:32px}p,li{color:#c6d2e9}small{color:#a6b5d7}footer{padding:26px 0;border-top:1px solid #293653;color:#a9b7d8}code{color:#b4c7ff}a:focus-visible{outline:2px solid #a6bcff;outline-offset:4px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header><a href="./index.html">← ORYX Backup · Página inicial</a></header>
+  <main>
+   <h1>Política de Privacidade do ORYX Backup</h1>
+   <small>Última atualização: 16 de outubro de 2026</small>
+   <p>Esta política descreve a integração privada denominada <strong>ORYX Backup</strong>, criada para operações de backup e restauração do projeto ORYX com uso do rclone, Restic e uma conta Google Drive dedicada. A integração destina-se exclusivamente ao operador autorizado, não sendo um aplicativo financeiro destinado a clientes.</p>
+   <h2>1. Permissão solicitada ao Google Drive</h2>
+   <p>O ORYX Backup utiliza o escopo OAuth <code>https://www.googleapis.com/auth/drive.file</code>, que permite criar e gerenciar os arquivos do Google Drive criados pelo aplicativo ou disponibilizados a ele. A integração não solicita permissão geral para ler todo o conteúdo do Drive.</p>
+   <h2>2. Finalidade e dados tratados</h2>
+   <p>O acesso ao Drive é utilizado para armazenar, listar, recuperar e, sob comando do operador, gerenciar arquivos relacionados aos repositórios criptografados de backup. O Google pode processar os arquivos criptografados e seus metadados técnicos necessários ao armazenamento e ao funcionamento do serviço.</p>
+   <h2>3. Criptografia e credenciais</h2>
+   <p>O conteúdo de backup é criptografado pelo Restic antes do envio. O rclone utiliza credenciais OAuth protegidas por senha na configuração local do operador. A senha do repositório Restic é distinta e não é enviada ao GitHub Pages. A proteção da estação de trabalho, o armazenamento seguro das senhas e as cópias independentes fazem parte dos controles operacionais do responsável.</p>
+   <h2>4. Compartilhamento e divulgação</h2>
+   <p>O aplicativo não comercializa nem divulga dados do Google Drive para publicidade. As informações necessárias para executar o backup são processadas pelos serviços Google Drive e pelas ferramentas locais utilizadas pelo operador. Esta página pública é hospedada pelo GitHub Pages, que pode processar dados técnicos da navegação conforme suas próprias políticas.</p>
+   <h2>5. Retenção e exclusão</h2>
+   <p>Os arquivos de backup permanecem no Drive até a exclusão manual ou execução de uma política de retenção configurada pelo operador. A remoção de arquivos e a revogação do acesso OAuth podem ser realizadas pelo responsável nas ferramentas e nas configurações da Conta Google. O ciclo definitivo de retenção dos backups reais depende de homologação operacional antes do uso com dados de clientes.</p>
+   <h2>6. Situação do serviço</h2>
+   <p>Na data desta política, a integração encontra-se em homologação, usando backups de dados fictícios. O armazenamento de informações reais do ORYX depende de aprovação de segurança, procedimento de recuperação validado e controles de privacidade adequados.</p>
+   <h2>7. Contato sobre o aplicativo</h2>
+   <p>Para questões públicas sobre este documento ou o aplicativo, consulte <a href="https://github.com/GamerEverson">o perfil do responsável no GitHub</a>. Não publique senhas, tokens, dados financeiros ou arquivos de backup em repositórios ou mensagens públicas.</p>
+   <h2>8. Alterações</h2>
+   <p>Esta política poderá ser revisada antes do início de backups com dados reais e sempre que houver alterações importantes no acesso ao Google Drive ou na forma de armazenamento e retenção.</p>
+  </main>
+  <footer>ORYX Backup · Política de Privacidade · <a href="./index.html">Voltar ao início</a></footer>
+</div>
+</body>
+</html>
